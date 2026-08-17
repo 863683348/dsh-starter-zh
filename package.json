@@ -16,9 +16,10 @@
     "README.zh.md"
   ],
   "scripts": {
-    "test": "node test/starter.test.mjs && node scripts/verify.mjs",
+    "test": "node test/starter.test.mjs && node test/data.test.mjs && node scripts/verify.mjs",
     "prepublishOnly": "node test/starter.test.mjs",
-    "verify": "node scripts/verify.mjs"
+    "verify": "node scripts/verify.mjs",
+    "demo": "node scripts/demo.mjs"
   },
   "keywords": [
     "deepseek-harness",
