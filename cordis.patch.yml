@@ -1,0 +1,9 @@
+# Bundle patch layer: composes over an EMPTY entry list, so use `insert`.
+- insert:
+    - id: starter-zh
+      name: 'dsh-starter-zh'
+      config:
+        # 新手入门包：欢迎语 + 学习路径 + 推荐插件 + 自查清单
+        sectionOrder: 10
+        promptEnabled: true
+        handbookUrl: 'https://github.com/863683348/dsh-handbook-zh'

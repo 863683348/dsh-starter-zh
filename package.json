@@ -1,0 +1,60 @@
+{
+  "name": "dsh-starter-zh",
+  "version": "0.1.0",
+  "description": "DSH 新手入门包：安装即得欢迎语、从 0 到 1 学习路径、按场景推荐插件、新手自查清单，并与 dsh-handbook-zh 中文教程联动。Starter pack for DeepSeek Harness beginners (Chinese).",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./starter": "./lib/starter.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md"
+  ],
+  "scripts": {
+    "test": "node test/starter.test.mjs",
+    "prepublishOnly": "node test/starter.test.mjs"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "cordis",
+    "plugin",
+    "bundle",
+    "starter",
+    "onboarding",
+    "beginner",
+    "tutorial",
+    "中文",
+    "入门"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-fs": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-system-prompt": "^0.1.0-rc.6",
+    "@deepseek-ai/dsh-tools": "^0.1.0-rc.6",
+    "@deepseek-ai/schemastery": "^3.18.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/863683348/dsh-starter-zh.git"
+  },
+  "homepage": "https://github.com/863683348/dsh-starter-zh#readme",
+  "bugs": {
+    "url": "https://github.com/863683348/dsh-starter-zh/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
