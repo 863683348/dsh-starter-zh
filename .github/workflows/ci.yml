@@ -13,4 +13,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - run: node --check lib/index.js && node --check lib/starter.js
       - run: node test/starter.test.mjs
+      - run: node test/data.test.mjs
+      - run: node scripts/verify.mjs
