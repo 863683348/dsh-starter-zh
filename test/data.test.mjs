@@ -14,7 +14,7 @@ test("welcomeText 无 handbookUrl 时不输出 undefined", () => {
 test("learningPath 每步 title 与 doc 对应教程文件", () => {
   for (const p of learningPath) {
     assert.ok(p.title.length > 0);
-    assert.match(p.doc, /^d{2}-.+\.md$/);
+    assert.match(p.doc, /^\d{2}-.+\.md$/);
   }
 });
 
