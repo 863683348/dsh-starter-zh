@@ -1,5 +1,9 @@
 # dsh-starter-zh — DSH Starter Pack (中文新手入门包)
 
+[![npm version](https://img.shields.io/npm/v/dsh-starter-zh)](https://www.npmjs.com/package/dsh-starter-zh)
+[![license](https://img.shields.io/npm/l/dsh-starter-zh)](LICENSE)
+[![topic: dsh-plugin](https://img.shields.io/badge/topic-dsh--plugin-4B44CE)](https://github.com/topics/dsh-plugin)
+
 **dsh-starter-zh** is a beginner starter pack for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness): install it and your agent instantly gains a welcome flow, a 0→1 learning path, scenario-based plugin recommendations, and a self-check checklist — paired with the [dsh-handbook-zh](https://github.com/863683348/dsh-handbook-zh) Chinese tutorial repo.
 
 > "一切皆插件" — but where do you start? This plugin answers that question in Chinese, in-session.
@@ -34,11 +38,17 @@ Then ask your agent: "我是 DSH 新手，带我入门" — it will call `starte
 
 The DSH ecosystem exploded to thousands of plugins in 72 hours, but there is no systematic Chinese onboarding path. This starter pack fills that gap — it is the "from 0 to 1" entry point, backed by a full Chinese handbook repo.
 
+## Docs
+
+- [USAGE.md](docs/USAGE.md) — model-side usage, tool parameters, config
+- [RELEASE.md](docs/RELEASE.md) — release checklist
+
 ## Development
 
 ```bash
 node --check lib/index.js && node --check lib/starter.js
 node test/starter.test.mjs
+node scripts/verify.mjs
 ```
 
 Pure logic lives in `lib/starter.js` (zero deps, unit-tested); the Cordis plugin in `lib/index.js` registers the `starter_zh` tool and the prompt section.
